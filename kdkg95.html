@@ -7,28 +7,34 @@
 
 <style>
 body{
-font-family: Arial, sans-serif;
-background:#f4f6f9;
 margin:0;
-padding:40px 20px;
+font-family:Arial, sans-serif;
+background:#eef2f6;
 }
 
-.container{
-max-width:800px;
-margin:auto;
+.header{
 background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+padding:20px 40px;
+display:flex;
+align-items:center;
+border-bottom:2px solid #d9e1ea;
 }
 
-.logo{
-text-align:center;
-margin-bottom:20px;
+.header img{
+max-height:60px;
 }
 
-.logo img{
-max-width:260px;
+.wrapper{
+max-width:900px;
+margin:60px auto;
+padding:0 20px;
+}
+
+.card{
+background:white;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+padding:40px;
 }
 
 h1{
@@ -38,29 +44,29 @@ margin-bottom:5px;
 
 .sub{
 text-align:center;
-color:gray;
-margin-bottom:25px;
+color:#6b7280;
+margin-bottom:30px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:15px;
+gap:20px;
 }
 
-.card{
-background:#f9fbfd;
-padding:15px;
-border-radius:10px;
-border:1px solid #e3e8ee;
+.box{
+background:#f8fafc;
+padding:18px;
+border-radius:12px;
+border:1px solid #e2e8f0;
 }
 
 .label{
 font-size:12px;
-color:gray;
-margin-bottom:5px;
+color:#64748b;
 text-transform:uppercase;
 font-weight:bold;
+margin-bottom:6px;
 }
 
 .value{
@@ -69,21 +75,21 @@ font-weight:bold;
 }
 
 .status{
-margin-top:25px;
+margin-top:35px;
 text-align:center;
-font-size:20px;
-color:green;
+font-size:22px;
 font-weight:bold;
+color:#16a34a;
 }
 
 .footer{
-margin-top:20px;
 text-align:center;
+margin-top:25px;
 font-size:12px;
-color:gray;
+color:#94a3b8;
 }
 
-@media(max-width:700px){
+@media(max-width:768px){
 .grid{
 grid-template-columns:1fr;
 }
@@ -93,43 +99,44 @@ grid-template-columns:1fr;
 
 <body>
 
-<div class="container">
-
-<div class="logo">
-<img src="logo%20(2).png" alt="Truck Repair Logo">
+<div class="header">
+<img src="logo%20(2).png" alt="Logo">
 </div>
 
+<div class="wrapper">
+<div class="card">
+
 <h1>Resultado de Verificación de Certificado</h1>
-<div class="sub">Sistema de verificación electrónica</div>
+<div class="sub">Sistema de validación electrónica</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="box">
 <div class="label">ID Documento</div>
 <div class="value">KDKG95-2026</div>
 </div>
 
-<div class="card">
+<div class="box">
 <div class="label">Tipo Documento</div>
 <div class="value">Certificado y Chequeo de Mantención</div>
 </div>
 
-<div class="card">
+<div class="box">
 <div class="label">Referencia</div>
 <div class="value">PATENTE: KDKG95</div>
 </div>
 
-<div class="card">
+<div class="box">
 <div class="label">Fecha Emisión</div>
 <div class="value">20-02-2026 12:30</div>
 </div>
 
-<div class="card">
+<div class="box">
 <div class="label">Fecha Vencimiento</div>
 <div class="value">20-08-2026</div>
 </div>
 
-<div class="card">
+<div class="box">
 <div class="label">Estado</div>
 <div class="value">VÁLIDO</div>
 </div>
@@ -141,9 +148,10 @@ grid-template-columns:1fr;
 </div>
 
 <div class="footer">
-© 2026 Truck Repair - Verificación Oficial
+© 2026 Truck Repair — Sistema Oficial de Verificación
 </div>
 
+</div>
 </div>
 
 </body>
