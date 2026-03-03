@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Verificación de Certificado</title>
+
 <style>
 body{
 font-family: Arial, sans-serif;
@@ -11,6 +12,7 @@ background:#f4f6f9;
 margin:0;
 padding:40px 20px;
 }
+
 .container{
 max-width:800px;
 margin:auto;
@@ -19,26 +21,40 @@ padding:30px;
 border-radius:12px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
+
+.logo{
+text-align:center;
+margin-bottom:20px;
+}
+
+.logo img{
+max-width:260px;
+}
+
 h1{
 text-align:center;
 margin-bottom:5px;
 }
+
 .sub{
 text-align:center;
 color:gray;
 margin-bottom:25px;
 }
+
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:15px;
 }
+
 .card{
 background:#f9fbfd;
 padding:15px;
 border-radius:10px;
 border:1px solid #e3e8ee;
 }
+
 .label{
 font-size:12px;
 color:gray;
@@ -46,10 +62,12 @@ margin-bottom:5px;
 text-transform:uppercase;
 font-weight:bold;
 }
+
 .value{
 font-size:16px;
 font-weight:bold;
 }
+
 .status{
 margin-top:25px;
 text-align:center;
@@ -57,12 +75,14 @@ font-size:20px;
 color:green;
 font-weight:bold;
 }
+
 .footer{
 margin-top:20px;
 text-align:center;
 font-size:12px;
 color:gray;
 }
+
 @media(max-width:700px){
 .grid{
 grid-template-columns:1fr;
@@ -70,13 +90,20 @@ grid-template-columns:1fr;
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
+
+<div class="logo">
+<img src="logo%20(2).png" alt="Truck Repair Logo">
+</div>
+
 <h1>Resultado de Verificación de Certificado</h1>
 <div class="sub">Sistema de verificación electrónica</div>
 
 <div class="grid">
+
 <div class="card">
 <div class="label">ID Documento</div>
 <div class="value">KDKG95-2026</div>
@@ -94,18 +121,19 @@ grid-template-columns:1fr;
 
 <div class="card">
 <div class="label">Fecha Emisión</div>
-<div class="value">20-02-2026</div>
+<div class="value">20-02-2026 12:30</div>
 </div>
 
 <div class="card">
 <div class="label">Fecha Vencimiento</div>
-<div class="value">20-02-2027</div>
+<div class="value">20-08-2026</div>
 </div>
 
 <div class="card">
 <div class="label">Estado</div>
 <div class="value">VÁLIDO</div>
 </div>
+
 </div>
 
 <div class="status">
