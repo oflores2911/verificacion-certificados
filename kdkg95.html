@@ -13,7 +13,7 @@ background:#eef2f6;
 }
 
 .wrapper{
-max-width:900px;
+max-width:950px;
 margin:60px auto;
 padding:0 20px;
 }
@@ -22,37 +22,40 @@ padding:0 20px;
 background:white;
 border-radius:14px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
-padding:50px 40px 40px;
-position:relative;
+padding:40px;
 }
 
-.card-logo{
-position:absolute;
-top:25px;
-left:30px;
+.header{
+display:flex;
+align-items:center;
+gap:25px;
+margin-bottom:25px;
 }
 
-.card-logo img{
-height:100px;
+.header img{
+height:90px;
 width:auto;
-display:block;
 }
 
-h1{
-text-align:center;
+.title-group{
+flex:1;
+}
+
+.title-group h1{
 margin:0 0 6px;
+font-size:32px;
 }
 
 .sub{
-text-align:center;
 color:#6b7280;
-margin:0 0 30px;
+margin:0;
 }
 
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:20px;
+margin-top:25px;
 }
 
 .box{
@@ -92,8 +95,13 @@ color:#94a3b8;
 
 @media(max-width:768px){
 .grid{ grid-template-columns:1fr; }
-.card{ padding:30px 20px; }
-.card-logo{ position:static; margin-bottom:15px; }
+.header{
+flex-direction:column;
+align-items:flex-start;
+}
+.header img{
+height:70px;
+}
 }
 </style>
 </head>
@@ -103,15 +111,15 @@ color:#94a3b8;
 <div class="wrapper">
   <div class="card">
 
-    <div class="card-logo">
+    <div class="header">
       <img src="logo%20(2).png" alt="Logo">
+      <div class="title-group">
+        <h1>Resultado de Verificación de Certificado</h1>
+        <p class="sub">Sistema de validación electrónica</p>
+      </div>
     </div>
 
-    <h1>Resultado de Verificación de Certificado</h1>
-    <div class="sub">Sistema de validación electrónica</div>
-
     <div class="grid">
-
       <div class="box">
         <div class="label">ID Documento</div>
         <div class="value">KDKG95-2026</div>
@@ -141,7 +149,6 @@ color:#94a3b8;
         <div class="label">Estado</div>
         <div class="value">VÁLIDO</div>
       </div>
-
     </div>
 
     <div class="status">✔ CERTIFICADO VÁLIDO</div>
