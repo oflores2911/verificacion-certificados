@@ -22,21 +22,18 @@ padding:0 20px;
 background:white;
 border-radius:14px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
-padding:34px 40px 40px;
+padding:50px 40px 40px;
 position:relative;
 }
 
 .card-logo{
 position:absolute;
-top:22px;
-left:28px;
-display:flex;
-align-items:center;
-gap:10px;
+top:25px;
+left:30px;
 }
 
 .card-logo img{
-height:42px;
+height:100px;
 width:auto;
 display:block;
 }
@@ -44,7 +41,6 @@ display:block;
 h1{
 text-align:center;
 margin:0 0 6px;
-padding-top:10px;
 }
 
 .sub{
@@ -94,12 +90,10 @@ font-size:12px;
 color:#94a3b8;
 }
 
-/* Para que el título no choque con el logo en pantallas chicas */
 @media(max-width:768px){
 .grid{ grid-template-columns:1fr; }
-.card{ padding:28px 22px 30px; }
-.card-logo{ position:static; margin-bottom:10px; }
-h1{ padding-top:0; }
+.card{ padding:30px 20px; }
+.card-logo{ position:static; margin-bottom:15px; }
 }
 </style>
 </head>
@@ -109,7 +103,6 @@ h1{ padding-top:0; }
 <div class="wrapper">
   <div class="card">
 
-    <!-- LOGO dentro del cuadro, donde marcaste -->
     <div class="card-logo">
       <img src="logo%20(2).png" alt="Logo">
     </div>
@@ -118,6 +111,7 @@ h1{ padding-top:0; }
     <div class="sub">Sistema de validación electrónica</div>
 
     <div class="grid">
+
       <div class="box">
         <div class="label">ID Documento</div>
         <div class="value">KDKG95-2026</div>
@@ -147,6 +141,7 @@ h1{ padding-top:0; }
         <div class="label">Estado</div>
         <div class="value">VÁLIDO</div>
       </div>
+
     </div>
 
     <div class="status">✔ CERTIFICADO VÁLIDO</div>
